@@ -12,6 +12,8 @@ import ReactiveSwift
 
 class NpsScoreByVersionViewController: UIViewController {
     
+    @IBOutlet weak var versionListXMSegmentedControl: XMSegmentedControl!
+    
     @IBOutlet weak var versionListSegmentedControl: UISegmentedControl!
     
     let viewModel = NpsScoresByVersionViewModel()
@@ -21,34 +23,17 @@ class NpsScoreByVersionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //configureSegmentedControlUI()
-        //versionListSegmentedControl.setSegmentStyle()
+        versionListXMSegmentedControl.font = FontBuilder.getGothamMedium(size: 12)
+        versionListXMSegmentedControl.layer.borderColor = UIColor.lightGray.cgColor
+        
+        
         showLoading()
         
-        viewModel.versionList.producer.on(starting: {
-            self.versionListSegmentedControl.removeAllSegments()
-        }) { (versionList) in
-            versionList.enumerated().forEach({ (version) in
-                self.versionListSegmentedControl.insertSegment(
-                    withTitle: version.element,
-                    at: version.offset,
-                    animated: false)
-            })
-        }.observe(on: UIScheduler()).start()
+        viewModel.versionList.producer.on(value: { (versionList) in
+            self.versionListXMSegmentedControl.segmentTitle = versionList
+        }).observe(on: UIScheduler()).start()
         
         viewModel.requestNpsList()
-    }
-    
-    // - MARK: Segmented Control
-    
-    func configureSegmentedControlUI() {
-        versionListSegmentedControl.setTitleTextAttributes(
-            [NSAttributedString.Key.foregroundColor: UIColor.white],
-            for: .selected)
-        versionListSegmentedControl.setTitleTextAttributes(
-            [NSAttributedString.Key.foregroundColor: UIColor.SegmentedControlItemColor],
-            for: .normal)
-        //versionListSegmentedControl.tintColor = Colors.SegmentedControlSelectedItemBackground
     }
     
     // create a 1x1 image with this color
@@ -80,5 +65,13 @@ class NpsScoreByVersionViewController: UIViewController {
         activityMonitor.startAnimating()
     }
 
+}
+
+// - MARK: XM Segmented Control delegate
+
+extension NpsScoreByVersionViewController: XMSegmentedControlDelegate {
+    func xmSegmentedControl(_ xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
+        viewModel.selectedVersion = xmSegmentedControl.segmentTitle[selectedSegment]
+    }
 }
 

@@ -87,6 +87,13 @@ open class XMSegmentedControl: UIView {
         }
     }
     
+    /// Sets the segmented control border color
+    @IBInspectable open var borderColor = UIColor.blue {
+        didSet {
+            self.update()
+        }
+    }
+    
     /**
      Sets the segmented control content type to `Text` and uses the content of the array to create the segments.
      - Note: Only six elements will be displayed.
@@ -322,6 +329,10 @@ open class XMSegmentedControl: UIView {
                     tab.imageView?.contentMode = .scaleAspectFit
                     tab.tintColor = i == selectedSegment ? highlightTint : tint
                 }
+                
+                tab.layer.borderWidth = 0.5
+                //tab.layer.cornerRadius = 3
+                tab.layer.borderColor = borderColor.cgColor
                 
                 tab.tag = i
                 tab.addTarget(self, action: #selector(XMSegmentedControl.segmentPressed(_:)), for: .touchUpInside)
