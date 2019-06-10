@@ -7,19 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA33B2B622AE1F2200AA580D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B522AE1F2200AA580D /* Model.swift */; };
+		EA33B2B822AE1F4400AA580D /* NpsScoresByVersionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */; };
+		EA33B2BA22AE1F6400AA580D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B922AE1F6400AA580D /* Network.swift */; };
+		EA33B2C122AE1FC000AA580D /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33B2BC22AE1FC000AA580D /* ReactiveMoya.framework */; };
+		EA33B2C222AE1FC000AA580D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33B2BD22AE1FC000AA580D /* Moya.framework */; };
+		EA33B2C322AE1FC000AA580D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33B2BE22AE1FC000AA580D /* Result.framework */; };
+		EA33B2C422AE1FC000AA580D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33B2BF22AE1FC000AA580D /* Alamofire.framework */; };
+		EA33B2C522AE1FC000AA580D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33B2C022AE1FC000AA580D /* ReactiveSwift.framework */; };
+		EA33B2C822AE295A00AA580D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33B2C722AE295A00AA580D /* ReactiveCocoa.framework */; };
+		EA33B2CA22AE330300AA580D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2C922AE330300AA580D /* Utilities.swift */; };
+		EA33B2CC22AE48CC00AA580D /* XMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2CB22AE48CC00AA580D /* XMSegmentedControl.swift */; };
 		EACA5D9822AE1D1B00B42793 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */; };
 		EAD4DF2B22ADD66E00116236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */; };
-		EAD4DF2D22ADD66E00116236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2C22ADD66E00116236 /* ViewController.swift */; };
+		EAD4DF2D22ADD66E00116236 /* NpsScoreByVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */; };
 		EAD4DF3022ADD66E00116236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD4DF2E22ADD66E00116236 /* Main.storyboard */; };
 		EAD4DF3222ADD66F00116236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD4DF3122ADD66F00116236 /* Assets.xcassets */; };
 		EAD4DF3522ADD66F00116236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD4DF3322ADD66F00116236 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA33B2B522AE1F2200AA580D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsScoresByVersionViewModel.swift; sourceTree = "<group>"; };
+		EA33B2B922AE1F6400AA580D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EA33B2BC22AE1FC000AA580D /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		EA33B2BD22AE1FC000AA580D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		EA33B2BE22AE1FC000AA580D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		EA33B2BF22AE1FC000AA580D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		EA33B2C022AE1FC000AA580D /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		EA33B2C722AE295A00AA580D /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		EA33B2C922AE330300AA580D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EA33B2CB22AE48CC00AA580D /* XMSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMSegmentedControl.swift; sourceTree = "<group>"; };
 		EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
 		EAD4DF2722ADD66E00116236 /* nps_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nps_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAD4DF2C22ADD66E00116236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsScoreByVersionViewController.swift; sourceTree = "<group>"; };
 		EAD4DF2F22ADD66E00116236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAD4DF3122ADD66F00116236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD4DF3422ADD66F00116236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,12 +53,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA33B2C122AE1FC000AA580D /* ReactiveMoya.framework in Frameworks */,
+				EA33B2C222AE1FC000AA580D /* Moya.framework in Frameworks */,
+				EA33B2C322AE1FC000AA580D /* Result.framework in Frameworks */,
+				EA33B2C422AE1FC000AA580D /* Alamofire.framework in Frameworks */,
+				EA33B2C522AE1FC000AA580D /* ReactiveSwift.framework in Frameworks */,
+				EA33B2C822AE295A00AA580D /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA33B2BB22AE1FC000AA580D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B2C722AE295A00AA580D /* ReactiveCocoa.framework */,
+				EA33B2BF22AE1FC000AA580D /* Alamofire.framework */,
+				EA33B2BD22AE1FC000AA580D /* Moya.framework */,
+				EA33B2BC22AE1FC000AA580D /* ReactiveMoya.framework */,
+				EA33B2C022AE1FC000AA580D /* ReactiveSwift.framework */,
+				EA33B2BE22AE1FC000AA580D /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA33B2CD22AE48D100AA580D /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B2CB22AE48CC00AA580D /* XMSegmentedControl.swift */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
 		EACA5D9922AE1D2100B42793 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +99,7 @@
 			children = (
 				EAD4DF2922ADD66E00116236 /* nps_test */,
 				EAD4DF2822ADD66E00116236 /* Products */,
+				EA33B2BB22AE1FC000AA580D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +115,17 @@
 			isa = PBXGroup;
 			children = (
 				EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */,
-				EAD4DF2C22ADD66E00116236 /* ViewController.swift */,
+				EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */,
+				EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */,
+				EA33B2B922AE1F6400AA580D /* Network.swift */,
+				EA33B2B522AE1F2200AA580D /* Model.swift */,
+				EA33B2C922AE330300AA580D /* Utilities.swift */,
 				EAD4DF2E22ADD66E00116236 /* Main.storyboard */,
 				EAD4DF3122ADD66F00116236 /* Assets.xcassets */,
 				EAD4DF3322ADD66F00116236 /* LaunchScreen.storyboard */,
 				EAD4DF3622ADD66F00116236 /* Info.plist */,
 				EACA5D9922AE1D2100B42793 /* Fonts */,
+				EA33B2CD22AE48D100AA580D /* Third Party */,
 			);
 			path = nps_test;
 			sourceTree = "<group>";
@@ -85,6 +140,7 @@
 				EAD4DF2322ADD66E00116236 /* Sources */,
 				EAD4DF2422ADD66E00116236 /* Frameworks */,
 				EAD4DF2522ADD66E00116236 /* Resources */,
+				EA33B2C622AE1FFD00AA580D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -142,13 +198,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EA33B2C622AE1FFD00AA580D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveMoya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAD4DF2322ADD66E00116236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD4DF2D22ADD66E00116236 /* ViewController.swift in Sources */,
+				EA33B2CA22AE330300AA580D /* Utilities.swift in Sources */,
+				EA33B2CC22AE48CC00AA580D /* XMSegmentedControl.swift in Sources */,
+				EA33B2BA22AE1F6400AA580D /* Network.swift in Sources */,
+				EA33B2B622AE1F2200AA580D /* Model.swift in Sources */,
+				EAD4DF2D22ADD66E00116236 /* NpsScoreByVersionViewController.swift in Sources */,
 				EAD4DF2B22ADD66E00116236 /* AppDelegate.swift in Sources */,
+				EA33B2B822AE1F4400AA580D /* NpsScoresByVersionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZRKDLBW86F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = nps_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +411,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZRKDLBW86F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = nps_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
