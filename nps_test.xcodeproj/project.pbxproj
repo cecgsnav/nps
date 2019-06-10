@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1DE3B522AE7AC10091C8FB /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1DE3B422AE7AC10091C8FB /* UPCarouselFlowLayout.framework */; };
+		EA1DE3B722AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */; };
 		EA33B2B622AE1F2200AA580D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B522AE1F2200AA580D /* Model.swift */; };
 		EA33B2B822AE1F4400AA580D /* NpsScoresByVersionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */; };
 		EA33B2BA22AE1F6400AA580D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B922AE1F6400AA580D /* Network.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA1DE3B422AE7AC10091C8FB /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPCarouselFlowLayout.framework; path = Carthage/Build/iOS/UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
+		EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsScoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA33B2B522AE1F2200AA580D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsScoresByVersionViewModel.swift; sourceTree = "<group>"; };
 		EA33B2B922AE1F6400AA580D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				EA33B2C422AE1FC000AA580D /* Alamofire.framework in Frameworks */,
 				EA33B2C522AE1FC000AA580D /* ReactiveSwift.framework in Frameworks */,
 				EA33B2C822AE295A00AA580D /* ReactiveCocoa.framework in Frameworks */,
+				EA1DE3B522AE7AC10091C8FB /* UPCarouselFlowLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 		EA33B2BB22AE1FC000AA580D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA1DE3B422AE7AC10091C8FB /* UPCarouselFlowLayout.framework */,
 				EA33B2C722AE295A00AA580D /* ReactiveCocoa.framework */,
 				EA33B2BF22AE1FC000AA580D /* Alamofire.framework */,
 				EA33B2BD22AE1FC000AA580D /* Moya.framework */,
@@ -128,6 +134,7 @@
 				EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */,
 				EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */,
 				EA33B2D622AE654900AA580D /* NpsDetailForVersionViewController.swift */,
+				EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */,
 				EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */,
 				EA33B2D822AE677800AA580D /* NpsDetailViewModel.swift */,
 				EA33B2B922AE1F6400AA580D /* Network.swift */,
@@ -228,6 +235,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/UPCarouselFlowLayout.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -238,6 +246,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/UPCarouselFlowLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -258,6 +267,7 @@
 				EA33B2CC22AE48CC00AA580D /* XMSegmentedControl.swift in Sources */,
 				EA33B2BA22AE1F6400AA580D /* Network.swift in Sources */,
 				EA33B2B622AE1F2200AA580D /* Model.swift in Sources */,
+				EA1DE3B722AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift in Sources */,
 				EAD4DF2D22ADD66E00116236 /* NpsScoreByVersionViewController.swift in Sources */,
 				EA33B2D122AE51D000AA580D /* MaterialCardView.swift in Sources */,
 				EAD4DF2B22ADD66E00116236 /* AppDelegate.swift in Sources */,

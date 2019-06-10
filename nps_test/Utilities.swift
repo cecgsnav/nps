@@ -11,6 +11,9 @@ import UIKit
 extension UIColor {
     static let badNpsColor = #colorLiteral(red: 0.8980392157, green: 0, blue: 0, alpha: 1)
     static let goodNpsColor = #colorLiteral(red: 0.4588235294, green: 0.7176470588, blue: 0.3254901961, alpha: 1)
+    
+    static let flavorTextPercentageColor = #colorLiteral(red: 0.4588235294, green: 0.7176470588, blue: 0.3254901961, alpha: 1)
+    static let flavorTextActivitiesColor = #colorLiteral(red: 0.1215686275, green: 0.6784313725, blue: 0.8745098039, alpha: 1)
 }
 
 struct FontBuilder {
@@ -37,5 +40,12 @@ extension UILabel {
             attributedString.addAttribute(NSAttributedString.Key.kern, value: value, range: NSRange(location: 0, length: attributedString.length - 1))
             attributedText = attributedString
         }
+    }
+}
+
+extension UIImageView {
+    func setRounded() {
+        self.layer.cornerRadius = (self.frame.width / 2) //instead of let radius = CGRectGetWidth(self.frame) / 2
+        self.layer.masksToBounds = true
     }
 }

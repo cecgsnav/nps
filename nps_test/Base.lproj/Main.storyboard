@@ -219,7 +219,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Kinedu NPS Score" id="CDt-W8-JWt"/>
+                    <navigationItem key="navigationItem" title="Kinedu NPS Score" id="CDt-W8-JWt">
+                        <barButtonItem key="backBarButtonItem" title="     " id="wuE-01-dWe"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="freemiumNumLabel" destination="J8P-cR-PbB" id="baQ-OK-wxB"/>
                         <outlet property="freemiumProportionLabel" destination="pAQ-8q-Rrf" id="ZNW-Sj-Xgn"/>
@@ -250,20 +252,20 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Sd-c1-lzj">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Sd-c1-lzj">
                                         <rect key="frame" x="20" y="60" width="379" height="226"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="226" id="wvB-ab-D0a"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E2A-fv-WGP">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E2A-fv-WGP" customClass="UPCarouselFlowLayout" customModule="UPCarouselFlowLayout">
                                             <size key="itemSize" width="85" height="150"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TTK-nF-i13">
-                                                <rect key="frame" x="0.0" y="0.0" width="85" height="150"/>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScoreCell" id="TTK-nF-i13" customClass="NpsScoreCollectionViewCell" customModule="nps_test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="38" width="85" height="150"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="85" height="150"/>
@@ -277,7 +279,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2O-5X-sUc">
-                                                            <rect key="frame" x="36.5" y="95" width="12.5" height="45"/>
+                                                            <rect key="frame" x="35" y="95" width="15.5" height="45"/>
                                                             <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -292,6 +294,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="o2O-5X-sUc" secondAttribute="bottom" constant="10" id="v98-1T-eRS"/>
                                                     <constraint firstItem="KvU-Nn-eN0" firstAttribute="leading" secondItem="TTK-nF-i13" secondAttribute="leading" id="xhH-xV-VBQ"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="scoreImageView" destination="KvU-Nn-eN0" id="DJd-ai-mr8"/>
+                                                    <outlet property="scoreLabel" destination="o2O-5X-sUc" id="FRl-me-9Q5"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -322,12 +328,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcw-Gh-GkS">
-                                        <rect key="frame" x="0.0" y="227" width="384" height="73"/>
+                                        <rect key="frame" x="0.0" y="225" width="384" height="75"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of the users that answered # in their NPS score saw # activities" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcc-Ts-5St">
-                                                <rect key="frame" x="35" y="14" width="314" height="34"/>
-                                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcc-Ts-5St">
+                                                <rect key="frame" x="35" y="14" width="314" height="36"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="# of the users that answered # in their NPS score saw # activities">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="18" name="GothamRounded-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -341,10 +354,10 @@
                                         <edgeInsets key="layoutMargins" top="14" left="35" bottom="25" right="35"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYS-gp-y8Q">
-                                        <rect key="frame" x="0.0" y="101" width="384" height="98"/>
+                                        <rect key="frame" x="0.0" y="101" width="384" height="96"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww1-mP-2K2">
-                                                <rect key="frame" x="48" y="6" width="96" height="86"/>
+                                                <rect key="frame" x="48" y="5" width="96" height="86"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHO-Ls-NMx">
                                                         <rect key="frame" x="35" y="0.0" width="26" height="36"/>
@@ -372,7 +385,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83o-DL-mMJ">
-                                                <rect key="frame" x="240" y="6" width="96" height="86"/>
+                                                <rect key="frame" x="240" y="5" width="96" height="86"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5I-TW-yhr">
                                                         <rect key="frame" x="35" y="0.0" width="26" height="36"/>
@@ -457,6 +470,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4ht-tk-sO1"/>
                     </view>
+                    <connections>
+                        <outlet property="extraInfoLabel" destination="Qcc-Ts-5St" id="uRB-w8-ca2"/>
+                        <outlet property="freemiumUsersNumLabel" destination="GHO-Ls-NMx" id="ElD-tj-XQH"/>
+                        <outlet property="premiumUsersNumLabel" destination="o5I-TW-yhr" id="vsd-Um-tEl"/>
+                        <outlet property="scoresCollectionView" destination="3Sd-c1-lzj" id="xE0-Qy-ref"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnk-Kb-ZB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

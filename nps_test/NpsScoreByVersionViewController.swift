@@ -49,17 +49,13 @@ class NpsScoreByVersionViewController: UIViewController {
             self.premiumProportionLabel.text = "Out of \(premiumScore.usersInPlan) users"
         }
         
+        showLoading()
+        
         viewModel.requestNpsList(completion: {
             DispatchQueue.main.async {
                 self.activityMonitor.stopAnimating()
             }
         })
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        showLoading()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
