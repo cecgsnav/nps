@@ -221,6 +221,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Kinedu NPS Score" id="CDt-W8-JWt"/>
                     <connections>
+                        <outlet property="freemiumNumLabel" destination="J8P-cR-PbB" id="baQ-OK-wxB"/>
+                        <outlet property="freemiumProportionLabel" destination="pAQ-8q-Rrf" id="ZNW-Sj-Xgn"/>
+                        <outlet property="npsScoreTitleLabel" destination="Aa1-bL-0cW" id="Vq5-Jx-JdR"/>
+                        <outlet property="premiumNumLabel" destination="cOi-3g-BRs" id="5Ml-Bb-y9a"/>
+                        <outlet property="premiumProportionLabel" destination="oxa-tV-i7V" id="Lh2-kg-xV3"/>
                         <outlet property="versionListXMSegmentedControl" destination="lNy-Ln-Goe" id="IEs-XZ-NbD"/>
                     </connections>
                 </viewController>
@@ -375,7 +380,7 @@
                                                         <color key="textColor" red="0.1215686275" green="0.67843137249999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freemium users" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLA-4Y-j1H">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium users" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLA-4Y-j1H">
                                                         <rect key="frame" x="0.0" y="45" width="96" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.1058823529" green="0.45882352939999999" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
