@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EACA5D9822AE1D1B00B42793 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */; };
 		EAD4DF2B22ADD66E00116236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */; };
 		EAD4DF2D22ADD66E00116236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2C22ADD66E00116236 /* ViewController.swift */; };
 		EAD4DF3022ADD66E00116236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD4DF2E22ADD66E00116236 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
 		EAD4DF2722ADD66E00116236 /* nps_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nps_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD4DF2C22ADD66E00116236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EACA5D9922AE1D2100B42793 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EAD4DF1E22ADD66E00116236 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 				EAD4DF3122ADD66F00116236 /* Assets.xcassets */,
 				EAD4DF3322ADD66F00116236 /* LaunchScreen.storyboard */,
 				EAD4DF3622ADD66F00116236 /* Info.plist */,
+				EACA5D9922AE1D2100B42793 /* Fonts */,
 			);
 			path = nps_test;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 			files = (
 				EAD4DF3522ADD66F00116236 /* LaunchScreen.storyboard in Resources */,
 				EAD4DF3222ADD66F00116236 /* Assets.xcassets in Resources */,
+				EACA5D9822AE1D1B00B42793 /* GothamRounded-Medium.otf in Resources */,
 				EAD4DF3022ADD66E00116236 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
