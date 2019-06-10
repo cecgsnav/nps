@@ -80,6 +80,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA1DE3B822AE8FF80091C8FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4DF2E22ADD66E00116236 /* Main.storyboard */,
+				EAD4DF3322ADD66F00116236 /* LaunchScreen.storyboard */,
+				EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */,
+				EA33B2D622AE654900AA580D /* NpsDetailForVersionViewController.swift */,
+				EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA1DE3B922AE90070091C8FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B2B922AE1F6400AA580D /* Network.swift */,
+				EA33B2C922AE330300AA580D /* Utilities.swift */,
+				EA33B2D022AE51D000AA580D /* MaterialCardView.swift */,
+				EA33B2D422AE5F2B00AA580D /* NpsCalculator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA1DE3BA22AE90110091C8FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B2B522AE1F2200AA580D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA1DE3BB22AE90190091C8FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */,
+				EA33B2D822AE677800AA580D /* NpsDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EA33B2BB22AE1FC000AA580D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +137,7 @@
 		EA33B2CD22AE48D100AA580D /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				EACA5D9922AE1D2100B42793 /* Fonts */,
 				EA33B2CB22AE48CC00AA580D /* XMSegmentedControl.swift */,
 				EA33B2D222AE524300AA580D /* CardView.swift */,
 			);
@@ -132,22 +173,13 @@
 			isa = PBXGroup;
 			children = (
 				EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */,
-				EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */,
-				EA33B2D622AE654900AA580D /* NpsDetailForVersionViewController.swift */,
-				EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */,
-				EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */,
-				EA33B2D822AE677800AA580D /* NpsDetailViewModel.swift */,
-				EA33B2B922AE1F6400AA580D /* Network.swift */,
-				EA33B2B522AE1F2200AA580D /* Model.swift */,
-				EA33B2C922AE330300AA580D /* Utilities.swift */,
-				EAD4DF2E22ADD66E00116236 /* Main.storyboard */,
+				EA1DE3B822AE8FF80091C8FB /* Views */,
+				EA1DE3BB22AE90190091C8FB /* ViewModel */,
+				EA1DE3BA22AE90110091C8FB /* Model */,
+				EA1DE3B922AE90070091C8FB /* Utils */,
 				EAD4DF3122ADD66F00116236 /* Assets.xcassets */,
-				EAD4DF3322ADD66F00116236 /* LaunchScreen.storyboard */,
 				EAD4DF3622ADD66F00116236 /* Info.plist */,
-				EACA5D9922AE1D2100B42793 /* Fonts */,
 				EA33B2CD22AE48D100AA580D /* Third Party */,
-				EA33B2D022AE51D000AA580D /* MaterialCardView.swift */,
-				EA33B2D422AE5F2B00AA580D /* NpsCalculator.swift */,
 			);
 			path = nps_test;
 			sourceTree = "<group>";

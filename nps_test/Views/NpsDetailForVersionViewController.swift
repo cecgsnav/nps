@@ -56,8 +56,8 @@ class NpsDetailForVersionViewController: UIViewController {
     
     private func setupLayout() {
         let layout = scoresCollectionView.collectionViewLayout as! UPCarouselFlowLayout
-        layout.sideItemShift = 10
-        layout.spacingMode = UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: 30)
+        //layout.sideItemShift = 10
+        layout.spacingMode = UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: 100)
     }
     
     private func updateFlavorText() {
