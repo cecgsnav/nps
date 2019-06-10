@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EA1DE3B522AE7AC10091C8FB /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1DE3B422AE7AC10091C8FB /* UPCarouselFlowLayout.framework */; };
 		EA1DE3B722AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */; };
+		EA3224F822AE958A004CB3EE /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA1DE3BC22AE92840091C8FB /* GothamRounded-Bold.otf */; };
+		EA3224F922AE958C004CB3EE /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA3224F622AE936F004CB3EE /* GothamRounded-Book.otf */; };
 		EA33B2B622AE1F2200AA580D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B522AE1F2200AA580D /* Model.swift */; };
 		EA33B2B822AE1F4400AA580D /* NpsScoresByVersionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */; };
 		EA33B2BA22AE1F6400AA580D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2B922AE1F6400AA580D /* Network.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		EA1DE3B422AE7AC10091C8FB /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPCarouselFlowLayout.framework; path = Carthage/Build/iOS/UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
 		EA1DE3B622AE7C7C0091C8FB /* NpsScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsScoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA1DE3BC22AE92840091C8FB /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
+		EA3224F622AE936F004CB3EE /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
 		EA33B2B522AE1F2200AA580D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsScoresByVersionViewModel.swift; sourceTree = "<group>"; };
 		EA33B2B922AE1F6400AA580D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -147,7 +151,9 @@
 		EACA5D9922AE1D2100B42793 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EA1DE3BC22AE92840091C8FB /* GothamRounded-Bold.otf */,
 				EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */,
+				EA3224F622AE936F004CB3EE /* GothamRounded-Book.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -243,9 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3224F922AE958C004CB3EE /* GothamRounded-Book.otf in Resources */,
 				EAD4DF3522ADD66F00116236 /* LaunchScreen.storyboard in Resources */,
 				EAD4DF3222ADD66F00116236 /* Assets.xcassets in Resources */,
 				EACA5D9822AE1D1B00B42793 /* GothamRounded-Medium.otf in Resources */,
+				EA3224F822AE958A004CB3EE /* GothamRounded-Bold.otf in Resources */,
 				EAD4DF3022ADD66E00116236 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

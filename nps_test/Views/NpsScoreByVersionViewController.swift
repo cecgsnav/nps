@@ -28,7 +28,7 @@ class NpsScoreByVersionViewController: UIViewController {
         super.viewDidLoad()
         
         versionListXMSegmentedControl.delegate = self
-        versionListXMSegmentedControl.font = FontBuilder.getGothamMedium(size: 12)
+        versionListXMSegmentedControl.font = FontBuilder.getGothamMediumBold(size: 12)
         versionListXMSegmentedControl.layer.borderColor = UIColor.lightGray.cgColor
         
         npsScoreTitleLabel.setTextSpacingBy(value: 5)

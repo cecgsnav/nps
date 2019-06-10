@@ -56,7 +56,6 @@ class NpsDetailForVersionViewController: UIViewController {
     
     private func setupLayout() {
         let layout = scoresCollectionView.collectionViewLayout as! UPCarouselFlowLayout
-        //layout.sideItemShift = 10
         layout.spacingMode = UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: 100)
     }
     
@@ -64,13 +63,16 @@ class NpsDetailForVersionViewController: UIViewController {
         let flavor = viewModel.getFlavorData()
         
         let flavorAttributedText = NSMutableAttributedString(string: "\(flavor.percentage)%", attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor.flavorTextPercentageColor])
+            [NSAttributedString.Key.foregroundColor: UIColor.flavorTextPercentageColor,
+             NSAttributedString.Key.font: FontBuilder.getGothamMediumBold(size: 18)])
         
         let extraText = NSAttributedString(string: " of users that answered \(viewModel.selectedScore.value) in their NPS score saw ", attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor.white])
+            [NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: FontBuilder.getGothamMedium(size: 14)])
         
         let activitiesText = NSAttributedString(string: "\(flavor.activities) activities", attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor.flavorTextActivitiesColor])
+            [NSAttributedString.Key.foregroundColor: UIColor.flavorTextActivitiesColor,
+            NSAttributedString.Key.font: FontBuilder.getGothamMediumBold(size: 18)])
         
         flavorAttributedText.append(extraText)
         flavorAttributedText.append(activitiesText)

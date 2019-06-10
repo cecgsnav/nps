@@ -4,7 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>GothamRounded-Book.otf</string>
 		<string>GothamRounded-Medium.otf</string>
+		<string>GothamRounded-Bold.otf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

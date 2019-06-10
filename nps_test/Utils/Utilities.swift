@@ -25,6 +25,20 @@ struct FontBuilder {
         return gothamMediumFont
     }
     
+    static func getGothamMediumBold(size: CGFloat) -> UIFont {
+        guard let gothamMediumFont = UIFont(name: "GothamRounded-Bold", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return gothamMediumFont
+    }
+    
+    static func getGothamMediumBook(size: CGFloat) -> UIFont {
+        guard let gothamMediumFont = UIFont(name: "GothamRounded-Book", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return gothamMediumFont
+    }
+    
 }
 
 extension Array {
