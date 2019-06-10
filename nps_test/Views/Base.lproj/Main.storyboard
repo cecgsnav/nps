@@ -163,6 +163,7 @@
                                     <constraint firstItem="pAQ-8q-Rrf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aPo-Y2-3fg" secondAttribute="leading" constant="8" id="o2h-8e-n5K"/>
                                     <constraint firstItem="cOi-3g-BRs" firstAttribute="top" secondItem="00I-ky-ja2" secondAttribute="bottom" constant="11" id="oeh-G6-GOl"/>
                                     <constraint firstItem="WP6-wz-fvC" firstAttribute="top" secondItem="pAQ-8q-Rrf" secondAttribute="bottom" constant="28.25" id="ov3-Vr-yZ0"/>
+                                    <constraint firstAttribute="width" constant="345" id="rIS-XU-k1i"/>
                                     <constraint firstItem="pAQ-8q-Rrf" firstAttribute="top" secondItem="J8P-cR-PbB" secondAttribute="bottom" constant="11" id="rpd-Ts-13t"/>
                                     <constraint firstItem="Aa1-bL-0cW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aPo-Y2-3fg" secondAttribute="leading" constant="8" id="tan-wy-ZSP"/>
                                     <constraint firstItem="WP6-wz-fvC" firstAttribute="leading" secondItem="aPo-Y2-3fg" secondAttribute="leading" id="to6-ZR-DQY"/>
@@ -185,6 +186,21 @@
                                         <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rIS-XU-k1i"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="rIS-XU-k1i"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="rIS-XU-k1i"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMW-ht-1O3">
                                 <rect key="frame" x="34" y="623" width="339" height="50"/>
@@ -209,21 +225,55 @@
                         <color key="backgroundColor" red="0.97255557775497437" green="0.9725373387336731" blue="0.97254973649978638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="lNy-Ln-Goe" firstAttribute="top" secondItem="4nj-uz-Tsb" secondAttribute="bottom" constant="20" id="0od-nQ-1m9"/>
-                            <constraint firstItem="aPo-Y2-3fg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5JI-SN-LfX"/>
+                            <constraint firstItem="aPo-Y2-3fg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="15" id="5JI-SN-LfX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KMW-ht-1O3" secondAttribute="trailing" constant="41" id="8aH-oy-gxq"/>
+                            <constraint firstItem="aPo-Y2-3fg" firstAttribute="width" secondItem="KMW-ht-1O3" secondAttribute="width" id="J0C-cZ-K3c"/>
                             <constraint firstItem="KMW-ht-1O3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="ORP-MM-0qT"/>
+                            <constraint firstItem="aPo-Y2-3fg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDR-3l-4pD"/>
                             <constraint firstItem="KMW-ht-1O3" firstAttribute="top" secondItem="aPo-Y2-3fg" secondAttribute="bottom" constant="29" id="Q3K-FQ-3wW"/>
                             <constraint firstItem="4nj-uz-Tsb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Rf9-tV-lN7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4nj-uz-Tsb" secondAttribute="trailingMargin" constant="15" id="SAs-8u-XP6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KMW-ht-1O3" secondAttribute="bottom" constant="29" id="WJ3-vT-QiH"/>
                             <constraint firstItem="4nj-uz-Tsb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wpr-hd-Lz2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lNy-Ln-Goe" secondAttribute="trailing" constant="15" id="eBm-xk-Xer"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lNy-Ln-Goe" secondAttribute="trailing" priority="999" constant="15" id="eBm-xk-Xer"/>
                             <constraint firstItem="aPo-Y2-3fg" firstAttribute="top" secondItem="lNy-Ln-Goe" secondAttribute="bottom" constant="22" id="f2b-99-6pj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aPo-Y2-3fg" secondAttribute="trailing" constant="15" id="qqY-vt-RCY"/>
+                            <constraint firstItem="KMW-ht-1O3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kbI-Ux-mhR"/>
+                            <constraint firstItem="lNy-Ln-Goe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oZ3-6U-gua"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aPo-Y2-3fg" secondAttribute="trailing" priority="999" constant="15" id="qqY-vt-RCY"/>
+                            <constraint firstItem="lNy-Ln-Goe" firstAttribute="width" secondItem="aPo-Y2-3fg" secondAttribute="width" id="rZi-HW-4EV"/>
                             <constraint firstItem="4nj-uz-Tsb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="uCh-Xt-Pxi"/>
-                            <constraint firstItem="lNy-Ln-Goe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="xaW-GQ-LDg"/>
+                            <constraint firstItem="lNy-Ln-Goe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="15" id="xaW-GQ-LDg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8aH-oy-gxq"/>
+                                <exclude reference="rZi-HW-4EV"/>
+                                <exclude reference="J0C-cZ-K3c"/>
+                                <exclude reference="ORP-MM-0qT"/>
+                                <exclude reference="kbI-Ux-mhR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="rZi-HW-4EV"/>
+                                <exclude reference="J0C-cZ-K3c"/>
+                                <include reference="kbI-Ux-mhR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="8aH-oy-gxq"/>
+                                <include reference="ORP-MM-0qT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="rZi-HW-4EV"/>
+                                <include reference="J0C-cZ-K3c"/>
+                                <include reference="kbI-Ux-mhR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Kinedu NPS Score" id="CDt-W8-JWt">
                         <barButtonItem key="backBarButtonItem" title="     " id="wuE-01-dWe"/>
@@ -441,6 +491,7 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RbJ-eN-eea" secondAttribute="trailing" constant="8" id="SQA-ab-iNE"/>
                                     <constraint firstItem="fcw-Gh-GkS" firstAttribute="leading" secondItem="Rdz-Cl-qa5" secondAttribute="leading" id="SoW-cj-3pA"/>
                                     <constraint firstItem="fcw-Gh-GkS" firstAttribute="top" secondItem="cYS-gp-y8Q" secondAttribute="bottom" constant="28" id="V8H-aQ-bfl"/>
+                                    <constraint firstAttribute="width" constant="465" id="Xdn-qp-Dt5"/>
                                     <constraint firstItem="RbJ-eN-eea" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rdz-Cl-qa5" secondAttribute="leading" constant="8" id="fLu-8Y-GBd"/>
                                     <constraint firstItem="cYS-gp-y8Q" firstAttribute="leading" secondItem="Rdz-Cl-qa5" secondAttribute="leading" id="fhJ-sW-pJR"/>
                                     <constraint firstAttribute="height" constant="300" id="qJI-Ay-l8O"/>
@@ -463,17 +514,33 @@
                                         <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xdn-qp-Dt5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Xdn-qp-Dt5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Xdn-qp-Dt5"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97255557780000002" green="0.97253733870000003" blue="0.97254973649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Rdz-Cl-qa5" firstAttribute="top" secondItem="UyQ-fc-sdp" secondAttribute="bottom" constant="20" id="7Ay-0f-mfa"/>
-                            <constraint firstItem="4ht-tk-sO1" firstAttribute="trailing" secondItem="Rdz-Cl-qa5" secondAttribute="trailing" constant="15" id="KCh-0H-tsV"/>
+                            <constraint firstItem="4ht-tk-sO1" firstAttribute="trailing" secondItem="Rdz-Cl-qa5" secondAttribute="trailing" priority="999" constant="15" id="KCh-0H-tsV"/>
                             <constraint firstItem="UyQ-fc-sdp" firstAttribute="top" secondItem="4ht-tk-sO1" secondAttribute="top" id="KYc-Yu-hrb"/>
                             <constraint firstItem="UyQ-fc-sdp" firstAttribute="leading" secondItem="aHr-Ub-gtW" secondAttribute="leading" id="Lyc-dS-2iA"/>
                             <constraint firstItem="4ht-tk-sO1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rdz-Cl-qa5" secondAttribute="bottom" constant="49" id="Vfs-HM-BNM"/>
                             <constraint firstAttribute="trailing" secondItem="UyQ-fc-sdp" secondAttribute="trailing" id="cJs-4a-WUm"/>
-                            <constraint firstItem="Rdz-Cl-qa5" firstAttribute="leading" secondItem="4ht-tk-sO1" secondAttribute="leading" constant="15" id="g2B-Uc-b60"/>
+                            <constraint firstItem="Rdz-Cl-qa5" firstAttribute="centerX" secondItem="aHr-Ub-gtW" secondAttribute="centerX" id="eQj-Rn-J4P"/>
+                            <constraint firstItem="Rdz-Cl-qa5" firstAttribute="leading" secondItem="4ht-tk-sO1" secondAttribute="leading" priority="999" constant="15" id="g2B-Uc-b60"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4ht-tk-sO1"/>
                     </view>
