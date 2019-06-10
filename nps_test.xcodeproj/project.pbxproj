@@ -21,6 +21,8 @@
 		EA33B2D122AE51D000AA580D /* MaterialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2D022AE51D000AA580D /* MaterialCardView.swift */; };
 		EA33B2D322AE524300AA580D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2D222AE524300AA580D /* CardView.swift */; };
 		EA33B2D522AE5F2B00AA580D /* NpsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2D422AE5F2B00AA580D /* NpsCalculator.swift */; };
+		EA33B2D722AE654900AA580D /* NpsDetailForVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2D622AE654900AA580D /* NpsDetailForVersionViewController.swift */; };
+		EA33B2D922AE677800AA580D /* NpsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B2D822AE677800AA580D /* NpsDetailViewModel.swift */; };
 		EACA5D9822AE1D1B00B42793 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */; };
 		EAD4DF2B22ADD66E00116236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */; };
 		EAD4DF2D22ADD66E00116236 /* NpsScoreByVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */; };
@@ -44,6 +46,8 @@
 		EA33B2D022AE51D000AA580D /* MaterialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCardView.swift; sourceTree = "<group>"; };
 		EA33B2D222AE524300AA580D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		EA33B2D422AE5F2B00AA580D /* NpsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsCalculator.swift; sourceTree = "<group>"; };
+		EA33B2D622AE654900AA580D /* NpsDetailForVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsDetailForVersionViewController.swift; sourceTree = "<group>"; };
+		EA33B2D822AE677800AA580D /* NpsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpsDetailViewModel.swift; sourceTree = "<group>"; };
 		EACA5D9722AE1D1B00B42793 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
 		EAD4DF2722ADD66E00116236 /* nps_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nps_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +127,9 @@
 			children = (
 				EAD4DF2A22ADD66E00116236 /* AppDelegate.swift */,
 				EAD4DF2C22ADD66E00116236 /* NpsScoreByVersionViewController.swift */,
+				EA33B2D622AE654900AA580D /* NpsDetailForVersionViewController.swift */,
 				EA33B2B722AE1F4400AA580D /* NpsScoresByVersionViewModel.swift */,
+				EA33B2D822AE677800AA580D /* NpsDetailViewModel.swift */,
 				EA33B2B922AE1F6400AA580D /* Network.swift */,
 				EA33B2B522AE1F2200AA580D /* Model.swift */,
 				EA33B2C922AE330300AA580D /* Utilities.swift */,
@@ -244,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA33B2D722AE654900AA580D /* NpsDetailForVersionViewController.swift in Sources */,
 				EA33B2CA22AE330300AA580D /* Utilities.swift in Sources */,
 				EA33B2D522AE5F2B00AA580D /* NpsCalculator.swift in Sources */,
+				EA33B2D922AE677800AA580D /* NpsDetailViewModel.swift in Sources */,
 				EA33B2D322AE524300AA580D /* CardView.swift in Sources */,
 				EA33B2CC22AE48CC00AA580D /* XMSegmentedControl.swift in Sources */,
 				EA33B2BA22AE1F6400AA580D /* Network.swift in Sources */,

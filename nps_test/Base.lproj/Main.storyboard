@@ -196,7 +196,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="0Ud-Ab-kkJ" kind="show" id="PMt-AC-NwI"/>
+                                    <segue destination="0Ud-Ab-kkJ" kind="show" identifier="NpsDetail" id="PMt-AC-NwI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -236,7 +236,7 @@
         <!--NPS Detail \(version)-->
         <scene sceneID="F6T-Ky-Dxy">
             <objects>
-                <viewController title="NPS Detail \(version)" id="0Ud-Ab-kkJ" sceneMemberID="viewController">
+                <viewController title="NPS Detail \(version)" id="0Ud-Ab-kkJ" customClass="NpsDetailForVersionViewController" customModule="nps_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHr-Ub-gtW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

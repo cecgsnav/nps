@@ -62,27 +62,21 @@ class NpsScoreByVersionViewController: UIViewController {
         showLoading()
     }
     
-    // create a 1x1 image with this color
-    private func imageWithColor(color: UIColor) -> UIImage {
-        let rect = CGRect(x: 0.0, y: 0.0, width:  20.0, height: 20.0)
-        UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()
-        context!.setFillColor(color.cgColor);
-        context!.fill(rect);
-        let image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        return image!
-    }
-    
-    @IBAction func indexChanged(sender: UISegmentedControl) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        switch identifier {
+        case "NpsDetail":
+            let toVC = segue.destination as? NpsDetailForVersionViewController
+            toVC?.viewModel = self.viewModel.createNpsScoreDetails()
+        default: break
+        }
     }
     
     // - MARK: Loading
     
     func showLoading() {
         // Init UIActivityIndicatorView
-        activityMonitor.frame = UIScreen.main.bounds//CGRect(x: 0, y: 0, width: 40, height: 40)
+        activityMonitor.frame = UIScreen.main.bounds
         activityMonitor.center = view.center
         activityMonitor.hidesWhenStopped = true
         activityMonitor.style = .whiteLarge

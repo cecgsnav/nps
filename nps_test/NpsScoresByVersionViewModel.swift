@@ -29,6 +29,11 @@ final class NpsScoresByVersionViewModel {
     var selectedVersionFreemiumScore: MutableProperty<NpsScoreViewModel> = MutableProperty((score: 0, usersInPlan: "", color: .black))
     var selectedVersionPremiumScore: MutableProperty<NpsScoreViewModel> = MutableProperty((score: 0, usersInPlan: "", color: .black))
     
+    func createNpsScoreDetails() -> NpsDetailsViewModel {
+        return NpsDetailsViewModel(nps: getNps(for: selectedVersion),
+                                   version: selectedVersion)
+    }
+    
     private func updateNpsStatsForVersion() {
         UserPlan.allCases.forEach { (userPlan) in
             let npsScore = calculateNpsScore(userPlan: userPlan, version: selectedVersion)
